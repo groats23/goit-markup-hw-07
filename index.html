@@ -16,6 +16,9 @@
       rel="stylesheet"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
   </head>
   <body>
     <!--website header-->
@@ -38,6 +41,17 @@
           </ul>
         </nav>
 
+        <button
+          class="mobile-menu-open js-open-menu"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/traling_icons/sprite.svg#menu-hamburger"></use>
+          </svg>
+        </button>
+
         <!--email address and phone number-->
         <ul class="contact list">
           <li class="contact-item">
@@ -53,26 +67,107 @@
           </li>
         </ul>
       </div>
+      <!--/email address and phone number-->
+
+      <!-- Mobile -->
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu_container">
+          <a class="modal-link-close js-close-menu">
+            <svg class="modal-icon-close" width="8" height="8">
+              <use href="./images/traling_icons/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <ul class="mobile-menu-list list">
+            <li class="menu-item-choice">
+              <a class="menu-link-choice current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="menu-item-choice">
+              <a class="menu-link-choice link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item-choice">
+              <a class="menu-link-choice link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <!--email address and phone number-->
+        <ul class="contact-mobile list">
+          <li class="contact-item-number mobile">
+            <a class="contact-link-number link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+
+          <li class="contact-item-mail">
+            <a class="contact-link-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <!--/email address and phone number-->
+
+        <!-- social-mobile -->
+        <ul class="social-list-mobile list">
+          <li class="social-item-mobile">
+            <a class="social-link-mobile" href>
+              <svg class="social-list-icon-mobile" width="24" height="24">
+                <use href="./images/traling_icons/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item-mobile">
+            <a class="social-link-mobile" href>
+              <svg class="social-list-icon-mobile" width="24" height="24">
+                <use href="./images/traling_icons/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item-mobile">
+            <a class="social-link-mobile" href>
+              <svg class="social-list-icon-mobile" width="24" height="24">
+                <use href="./images/traling_icons/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item-mobile">
+            <a class="social-link-mobile" href>
+              <svg class="social-list-icon-mobile" width="24" height="24">
+                <use href="./images/traling_icons/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- /social-mobile -->
+      </div>
+
+      <!-- /Mobile -->
     </header>
+
     <!--/website header-->
 
     <main>
       <!--Hero section-->
-      <section class="hero overlay">
+      <!-- <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="modal-btn btn-options" data-modal-open type="button">
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!--/Hero section-->
 
       <!--Our advantages section 1-->
-      <section class="advantages-section section">
-        <div class="container">
-          <!--The <h2> header is hidden  -->
-          <h2 class="advantages-title title" hidden>Our advantages</h2>
+      <!-- <section class="advantages-section section">
+        <div class="container"> -->
+      <!--The <h2> header is hidden  -->
+      <!-- <h2 class="advantages-title title" hidden>Our advantages</h2>
           <ul class="advantages-list list item-gen">
             <li class="advantages-item icon-antenna">
               <h3 class="advantages-subtitle subtitle">Strategy</h3>
@@ -107,11 +202,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--/Our advantages section 1-->
 
       <!--What are we doing section 2-->
-      <section class="illustration-section section">
+      <!-- <section class="illustration-section section">
         <div class="container">
           <h2 class="illustration-title title">What are we doing</h2>
           <ul class="illustration-list list">
@@ -146,11 +241,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--/What are we doing section 2-->
 
       <!--Our Team section 3-->
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="team-title title">Our Team</h2>
           <ul class="team-list list">
@@ -372,11 +467,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--/Our Team section 3-->
 
       <!-- Customers section 4 -->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers-title title">Customers</h2>
           <ul class="customers-list list">
@@ -432,11 +527,11 @@
           </ul>
         </div>
       </section>
-    </main>
-    <!-- /Customers section 4 -->
+    </main> -->
+      <!-- /Customers section 4 -->
 
-    <!--website footer-->
-    <footer class="footer-section">
+      <!--website footer-->
+      <!-- <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-logo-text">
           <a class="header-logo link heder-logo-Light" href="./index.html">
@@ -482,11 +577,11 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- Submission form footer -->
+      <!-- Submission form footer -->
 
-        <form class="footer-modal-form">
+      <!-- <form class="footer-modal-form">
           <p class="footer-modal-text">Subscribe</p>
 
           <div class="footer-lable-button">
@@ -509,24 +604,24 @@
               </svg>
             </button>
           </div>
-        </form>
+        </form> -->
 
-        <!-- /Submission form footer -->
-      </div>
-    </footer>
-    <!--/website footer-->
+      <!-- /Submission form footer -->
+      <!-- </div>
+    </footer> -->
+      <!--/website footer-->
 
-    <!-- Modal Window -->
-    <div class="backdrop is-hidden" data-modal>
+      <!-- Modal Window -->
+      <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <a class="modal-link">
           <svg class="modal-icon" data-modal-close width="8" height="8">
             <use href="./images/traling_icons/sprite.svg#close"></use>
           </svg>
-        </a>
+        </a> -->
 
-        <!-- Form -->
-        <p class="modal-text">Leave your contacts and we will call you back</p>
+      <!-- Form -->
+      <!-- <p class="modal-text">Leave your contacts and we will call you back</p>
 
         <form class="modal-form">
           <label class="modal-form-field">
@@ -603,12 +698,14 @@
           <button class="modal-fotm-send btn-options" type="submit">
             Send
           </button>
-        </form>
-        <!-- /Form -->
-      </div>
-    </div>
-    <!-- /Modal Window -->
+        </form> -->
+      <!-- /Form -->
+      <!-- </div>
+    </div> -->
+      <!-- /Modal Window -->
 
-    <script src="./js/modal.js"></script>
+      <!-- <script src="./js/modal.js"></script> -->
+      <script src="./js/mobile-menu.js"></script>
+    </main>
   </body>
 </html>
