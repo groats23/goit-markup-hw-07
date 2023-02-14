@@ -1,5 +1,40 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1200px;
+  }
+
+  .contact-tablet {
+    display: none;
+  }
+
+  .contact-link {
+    display: block;
+    padding-top: var(--distance-1);
+    padding-bottom: var(--distance-1);
+
+    color: var(--desc-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--accent-text-color);
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .contact-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .header-logo {
+    margin-right: 76px;
   }
 }
