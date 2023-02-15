@@ -36,31 +36,7 @@
 
   /* logo */
   .header-logo {
-    display: block;
-    align-items: center;
     margin-right: 76px;
-
-    color: var(--primary-text-color);
-    font-weight: 800;
-    font-size: 18px;
-    font-family: var(--secondary-font);
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .heder-logo-Light {
-    color: var(--light-color);
-  }
-
-  .header-logo-web {
-    color: var(--accent-text-color);
-  }
-
-  .logo {
-    display: block;
-    padding-top: var(--distance-1);
-    padding-bottom: var(--distance-1);
   }
   /* /logo */
 
@@ -227,8 +203,29 @@
 
   /* <!--Hero section--> */
 
-  .hero {
-    display: none;
+  .hero-title {
+    max-width: 318px;
+
+    font-size: 36px;
+    line-height: 1.1;
   }
+
+  /* button-index.html */
+  .modal-btn {
+    margin-top: 72px;
+    margin-bottom: 112px;
+  }
+
+  .overlay {
+    max-width: 428px;
+    height: 432px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/hero-mobile.jpg);
+  }
+
   /* <!--/Hero section--> */
 }

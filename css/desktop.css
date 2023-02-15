@@ -37,4 +37,28 @@
   .header-logo {
     margin-right: 76px;
   }
+
+  /* <!--Hero section--> */
+
+  .hero-title {
+    padding-top: 188px;
+  }
+
+  /* button-index.html */
+  .modal-btn {
+    margin-top: 48px;
+    margin-bottom: 188px;
+  }
+
+  .overlay {
+    max-width: 1440px;
+    height: 600px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/img-hero.jpg);
+  }
+  /* <!--/Hero section--> */
 }

@@ -16,31 +16,7 @@
 
   /* logo */
   .header-logo {
-    display: block;
-    align-items: center;
     margin-right: 120px;
-
-    color: var(--primary-text-color);
-    font-weight: 800;
-    font-size: 18px;
-    font-family: var(--secondary-font);
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .heder-logo-Light {
-    color: var(--light-color);
-  }
-
-  .header-logo-web {
-    color: var(--accent-text-color);
-  }
-
-  .logo {
-    display: block;
-    padding-top: var(--distance-1);
-    padding-bottom: var(--distance-1);
   }
   /* /logo */
 
@@ -126,6 +102,11 @@
   }
 
   /* ==================== /Header ==================== */
+  .hero-title {
+    max-width: 494px;
+    font-size: 56px;
+    line-height: 1.1;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -153,4 +134,22 @@
     align-items: center;
     margin-left: auto;
   }
+
+  /* button-index.html */
+  .modal-btn {
+    margin-top: 40px;
+    margin-bottom: 108px;
+  }
+
+  .overlay {
+    max-width: 768px;
+    height: 436px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/hero-tablet.jpg);
+  }
+  /* <!--/Hero section--> */
 }
