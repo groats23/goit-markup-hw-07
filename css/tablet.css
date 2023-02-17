@@ -8,6 +8,7 @@
   .mobile-menu-open {
     display: none;
   }
+
   .page-header-container {
     display: flex;
     justify-content: space-between;
@@ -102,6 +103,7 @@
   }
 
   /* ==================== /Header ==================== */
+
   .hero-title {
     max-width: 494px;
     font-size: 56px;
@@ -109,8 +111,22 @@
   }
 }
 
+/* @media screen and (min-width: 481px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/hero-tablet.jpg);
+  }
+} */
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
+    display: none;
+  }
+
+  .illustration-section {
     display: none;
   }
 
@@ -138,12 +154,11 @@
   /* button-index.html */
   .modal-btn {
     margin-top: 40px;
-    margin-bottom: 108px;
   }
 
   .overlay {
-    max-width: 768px;
-    height: 436px;
+    max-width: 100%;
+    height: auto;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -151,5 +166,83 @@
       ),
       url(../images/Hero/hero-tablet.jpg);
   }
+
   /* <!--/Hero section--> */
+
+  /* ==================== Our advantages section 1 ==================== */
+
+  .advantages-list > .advantages-item {
+    display: block;
+
+    width: 356px;
+    height: 120px;
+    margin-left: 1px;
+    background-repeat: no-repeat;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 96px;
+  }
+
+  .advantages-text {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .advantages-subtitle {
+    /* margin-top: 72px; */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    text-transform: capitalize;
+  }
+
+  .advantages-item {
+    margin-bottom: 72px;
+    padding-top: 96px;
+  }
+
+  /* ==================== /Our advantages section 1 ==================== */
+
+  .hero {
+    padding-bottom: 112px;
+  }
+
+  /* ==================== Our Team section 3 ==================== */
+
+  .team-section {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+
+  .team-list {
+    gap: var(--distance-1);
+    justify-content: center;
+  }
+
+  .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
+  /* ==================== /Our Team section 3 ==================== */
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/hero-tablet-2x.jpg);
+  }
 }

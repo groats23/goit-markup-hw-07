@@ -6,8 +6,17 @@
   }
 }
 
+/* ==================== Header ==================== */
+
 @media screen and (max-width: 767px) {
-  /* ==================== Header ==================== */
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   .menu {
     display: none;
   }
@@ -18,9 +27,11 @@
   .contact-tablet {
     display: none;
   }
-}
 
-@media screen and (max-width: 767px) {
+  .illustration-section {
+    display: none;
+  }
+
   .page-header-container {
     display: flex;
     justify-content: space-between;
@@ -179,9 +190,9 @@
 
   .social-list-mobile {
     display: flex;
-    gap: 56px;
+    gap: 40px;
+    justify-content: center;
     padding-bottom: 40px;
-    padding-left: 40px;
   }
 
   .social-link-mobile {
@@ -203,6 +214,10 @@
 
   /* <!--Hero section--> */
 
+  .hero {
+    padding-bottom: 112px;
+  }
+
   .hero-title {
     max-width: 318px;
 
@@ -213,19 +228,102 @@
   /* button-index.html */
   .modal-btn {
     margin-top: 72px;
-    margin-bottom: 112px;
   }
 
   .overlay {
-    max-width: 428px;
-    height: 432px;
+    max-width: 100%;
+    height: auto;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Hero/hero-mobile.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+
+  .modal {
+    min-width: 392px;
+    min-height: 586px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .modal-text {
+    margin: 72px 0px 16px 0px;
   }
 
   /* <!--/Hero section--> */
+
+  /* ==================== Our advantages section 1 ==================== */
+
+  .advantages-list > .advantages-item {
+    margin-left: 1px;
+  }
+  .advantages-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .advantages-text {
+    margin-top: 8px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .advantages-item {
+    margin-bottom: 72px;
+  }
+
+  .advantages-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .advantages-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  /* .advantages-subtitle-mobile {
+    margin-top: 96px;
+  } */
+
+  /* ==================== /Our advantages section 1 ==================== */
+
+  /* ==================== Our Team section 3 ==================== */
+
+  .team-section {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+
+  .team-list {
+    gap: 72px;
+    justify-content: center;
+  }
+
+  /* ==================== /Our Team section 3 ==================== */
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/hero-mobile-2x.jpg);
+  }
 }

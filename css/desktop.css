@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1158px;
   }
 
   .contact-tablet {
@@ -60,5 +60,115 @@
       ),
       url(../images/Hero/img-hero.jpg);
   }
+
   /* <!--/Hero section--> */
+
+  /* ==================== Our advantages section 1 ==================== */
+
+  .section {
+    padding-top: var(--distance-3);
+  }
+
+  .subtitle {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .desc-text {
+    color: var(--desc-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .item-gen {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--distance-1));
+    margin-left: calc(-1 * var(--distance-1));
+  }
+
+  .advantages-list > .advantages-item {
+    flex-basis: calc(100% / 4 - var(--distance-1));
+    margin-left: var(--distance-1);
+  }
+
+  .advantages-text {
+    margin-top: 8px;
+  }
+
+  .advantages-item::before {
+    content: '';
+
+    display: block;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+
+    background-color: var(--light-color);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .advantages-item.icon-antenna::before {
+    background-image: url(../images/Our_advantages/antenna.svg);
+  }
+
+  .advantages-item.icon-clock::before {
+    background-image: url(../images/Our_advantages/clock.svg);
+  }
+
+  .advantages-item.icon-diagram::before {
+    background-image: url(../images/Our_advantages/diagram.svg);
+  }
+
+  .advantages-item.icon-astronaut::before {
+    background-image: url(../images/Our_advantages/astronaut.svg);
+  }
+
+  /* ==================== /Our advantages section 1 ==================== */
+
+  /* ==================== What are we doing section 2 ==================== */
+
+  .illustration-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--distance-1);
+  }
+
+  .illustration-title {
+    margin-bottom: 72px;
+  }
+
+  .illustration-section {
+    padding-bottom: var(--distance-3);
+  }
+
+  /* ==================== /What are we doing section 2 ==================== */
+
+  /* ==================== Our Team section 3 ==================== */
+
+  .team-section {
+    padding-top: var(--distance-3);
+    padding-bottom: var(--distance-3);
+  }
+
+  .team-list {
+    gap: var(--distance-1);
+  }
+
+  /* ==================== /Our Team section 3 ==================== */
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero/img-hero-2x.jpg);
+  }
 }
