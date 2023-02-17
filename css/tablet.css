@@ -111,16 +111,6 @@
   }
 }
 
-/* @media screen and (min-width: 481px) {
-  .overlay {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Hero/hero-tablet.jpg);
-  }
-} */
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     display: none;
@@ -224,8 +214,16 @@
   }
 
   .team-list {
-    gap: var(--distance-1);
     justify-content: center;
+  }
+
+  .team-item {
+    margin-right: 24px;
+    margin-bottom: 64px;
+  }
+
+  .team-item:nth-child(2n) {
+    margin-right: 0px;
   }
 
   .team-item:nth-last-child(-n + 2) {
@@ -233,6 +231,23 @@
   }
 
   /* ==================== /Our Team section 3 ==================== */
+
+  /* ==================== Customers section 4 ==================== */
+
+  .customers-item {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .customers-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  .customers-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+
+  /* ==================== /Customers section 4 ==================== */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),

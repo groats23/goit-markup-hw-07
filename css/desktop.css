@@ -159,6 +159,19 @@
   }
 
   /* ==================== /Our Team section 3 ==================== */
+
+  /* ==================== Customers section 4 ==================== */
+
+  .customers-list {
+    gap: var(--distance-1);
+  }
+
+  .customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  /* ==================== /Customers section 4 ==================== */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

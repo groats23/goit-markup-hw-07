@@ -295,10 +295,6 @@
     text-transform: capitalize;
   }
 
-  /* .advantages-subtitle-mobile {
-    margin-top: 96px;
-  } */
-
   /* ==================== /Our advantages section 1 ==================== */
 
   /* ==================== Our Team section 3 ==================== */
@@ -314,6 +310,23 @@
   }
 
   /* ==================== /Our Team section 3 ==================== */
+
+  /* ==================== Customers section 4 ==================== */
+
+  .customers-item {
+    margin-right: 16px;
+    margin-bottom: 72px;
+  }
+
+  .customers-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .customers-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+
+  /* ==================== /Customers section 4 ==================== */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
