@@ -485,6 +485,7 @@ img {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
 }
