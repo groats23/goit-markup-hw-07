@@ -387,6 +387,42 @@
   }
 
   /* <!-- /Form-footer --> */
+
+  /* ==================== Content portfolio ==================== */
+
+  /* button-portfolio.html */
+  .btn-portfolio {
+    padding: 8px 16px;
+  }
+  /* button-portfolio.html */
+
+  .portfolio-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .btn-mobile-one {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  .btn-mobile-two {
+    display: flex;
+    gap: 24px;
+  }
+
+  .content-list > .content-item {
+    position: relative;
+    /* flex-basis: calc(100% / 3 - var(--distance-1)); */
+
+    margin-bottom: var(--distance-2);
+    margin-left: var(--distance-1);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ==================== /Content portfolio ==================== */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
