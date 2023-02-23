@@ -381,6 +381,7 @@
   }
 
   .footer-modal-btn {
+    justify-content: center;
     margin-top: 16px;
     margin-right: auto;
     margin-left: auto;
