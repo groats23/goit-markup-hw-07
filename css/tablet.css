@@ -320,8 +320,12 @@
     padding-bottom: 64px;
   }
 
-  .content-list {
-    gap: 24px;
+  .content-item {
+    margin-right: 24px;
+  }
+
+  .content-item:nth-child(2n) {
+    margin-right: 0px;
   }
 
   .content-list > .content-item {
