@@ -21,6 +21,12 @@
   }
   /* /logo */
 
+  .btn-list {
+    display: flex;
+    gap: var(--distance-1);
+    justify-content: center;
+  }
+
   /* ==================== Header ==================== */
 
   /* menu */
@@ -113,6 +119,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
+    display: none;
+  }
+
+  .content-item-tablet {
     display: none;
   }
 
@@ -301,6 +311,36 @@
   /* <!-- /Form-footer --> */
 
   /* ==================== /footer ==================== */
+
+  /* ==================== Content portfolio ==================== */
+
+  .portfolio-container {
+    padding-top: 64px;
+
+    padding-bottom: 64px;
+  }
+
+  .content-list {
+    gap: 24px;
+  }
+
+  .content-list > .content-item {
+    flex-basis: calc(100% / 2 - var(--distance-1));
+  }
+
+  .item-gen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc(-1 * var(--distance-1));
+    padding-bottom: 96px;
+  }
+
+  /* ==================== /Content portfolio ==================== */
+
+  /* ==================== portfolio-section ==================== */
+
+  /* ==================== /portfolio-section ==================== */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
